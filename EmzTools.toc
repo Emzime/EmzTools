@@ -1,0 +1,60 @@
+## Interface: 11200
+## Title: EmzTools
+## Notes: Framework d'outils et automatisation pour WoW Vanilla 1.12
+## Author: Emz
+## Version: 1.0.0
+## DefaultState: enabled
+## SavedVariables: EmzToolsDB
+
+# ===================================================
+# CORE
+# ===================================================
+Core.lua
+
+# ===================================================
+# LOCALIZATION
+# ===================================================
+Localization\Locale_enUS.lua
+Localization\Locale_frFR.lua
+
+# ===================================================
+# DATA
+# ===================================================
+Data\Utils.lua
+Data\Database.lua
+Data\EventManager.lua
+Data\UI.lua
+Data\InfoBar.lua
+Data\Potions.lua
+Data\Consumables.lua
+Data\Thresholds.lua
+
+# ===================================================
+# PLUGINS - MYHUNTER
+# ===================================================
+Plugins\MyHunter\MyHunter.lua
+Plugins\MyHunter\MyHunter_UI.lua
+
+# ===================================================
+# PLUGINS - MYHUNTER Locallisation
+# ===================================================
+Plugins\MyHunter\MyHunter_Localization\MyHunter_Locale_enUS.lua
+Plugins\MyHunter\MyHunter_Localization\MyHunter_Locale_frFR.lua
+
+# ===================================================
+# PLUGINS - MYHUNTER MODULES
+# ===================================================
+Plugins\MyHunter\MyHunter_Modules\MyHunter_SpellBook.lua
+Plugins\MyHunter\MyHunter_Modules\MyHunter_Rotation.lua
+Plugins\MyHunter\MyHunter_Modules\MyHunter_RotationDisplay.lua
+Plugins\MyHunter\MyHunter_Modules\MyHunter_Aspects.lua
+Plugins\MyHunter\MyHunter_Modules\MyHunter_Pet.lua
+Plugins\MyHunter\MyHunter_Modules\MyHunter_Utils.lua
+Plugins\MyHunter\MyHunter_Modules\MyHunter_Stings.lua
+
+# ===================================================
+# PLUGINS - MYHUNTER SPEC
+# ===================================================
+Plugins\MyHunter\MyHunter_Spec\MyHunter_BeastMastery.lua
+Plugins\MyHunter\MyHunter_Spec\MyHunter_Marksman.lua
+Plugins\MyHunter\MyHunter_Spec\MyHunter_Survival.lua
