@@ -55,6 +55,8 @@ Plugins\MyHunter\MyHunter_Modules\MyHunter_Stings.lua
 # ===================================================
 # PLUGINS - MYHUNTER SPEC
 # ===================================================
+Plugins\MyHunter\MyHunter_Spec\MyHunter_SpecBase.lua
 Plugins\MyHunter\MyHunter_Spec\MyHunter_BeastMastery.lua
 Plugins\MyHunter\MyHunter_Spec\MyHunter_Marksman.lua
 Plugins\MyHunter\MyHunter_Spec\MyHunter_Survival.lua
+
