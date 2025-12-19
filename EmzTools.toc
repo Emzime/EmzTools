@@ -7,7 +7,7 @@
 ## SavedVariables: EmzToolsDB
 
 # ===================================================
-# CORE
+# CORE (chargé en premier)
 # ===================================================
 Core.lua
 
@@ -18,45 +18,71 @@ Localization\Locale_enUS.lua
 Localization\Locale_frFR.lua
 
 # ===================================================
-# DATA
+# MODULES DE BASE (ordre critique)
 # ===================================================
-Data\Utils.lua
 Data\Database.lua
+Data\Utils.lua
 Data\EventManager.lua
-Data\UI.lua
+Data\Minimap.lua
+Data\Help.lua
+Data\SlashCommands.lua
+
+# ===================================================
+# MODULES UI ET CONFIGURATION
+# ===================================================
+Data\UI_Themes_Colors.lua
+Data\UIConfig.lua
+
+# ===================================================
+# MODULES FONCTIONNELS
+# ===================================================
 Data\InfoBar.lua
+Data\Thresholds.lua
 Data\Potions.lua
 Data\Consumables.lua
-Data\Thresholds.lua
+Data\InternalProfiler.lua
 
 # ===================================================
-# PLUGINS - MYHUNTER
+# FICHIERS DE CONFIGURATION UI (après UIConfig)
 # ===================================================
-Plugins\MyHunter\MyHunter.lua
-Plugins\MyHunter\MyHunter_UI.lua
+UIConfigTabs\UIConfig_Core.lua
+UIConfigTabs\UIConfig_InfoBar.lua
+UIConfigTabs\UIConfig_Potions.lua
+# UIConfigTabs\UIConfig_Thresholds.lua
+# UIConfigTabs\UIConfig_Consumables.lua
+# UIConfigTabs\UIConfig_InternalProfiler.lua
 
 # ===================================================
-# PLUGINS - MYHUNTER Locallisation
+# PLUGINS - MYHUNTER (CORE)
 # ===================================================
-Plugins\MyHunter\MyHunter_Localization\MyHunter_Locale_enUS.lua
-Plugins\MyHunter\MyHunter_Localization\MyHunter_Locale_frFR.lua
+# Plugins\MyHunter\MyHunter.lua
+# Plugins\MyHunter\MyHunter_Utils.lua
+# Plugins\MyHunter\MyHunter_SpellBook.lua
 
 # ===================================================
-# PLUGINS - MYHUNTER MODULES
+# PLUGINS - MYHUNTER LOCALIZATION
 # ===================================================
-Plugins\MyHunter\MyHunter_Modules\MyHunter_SpellBook.lua
-Plugins\MyHunter\MyHunter_Modules\MyHunter_Rotation.lua
-Plugins\MyHunter\MyHunter_Modules\MyHunter_RotationDisplay.lua
-Plugins\MyHunter\MyHunter_Modules\MyHunter_Aspects.lua
-Plugins\MyHunter\MyHunter_Modules\MyHunter_Pet.lua
-Plugins\MyHunter\MyHunter_Modules\MyHunter_Utils.lua
-Plugins\MyHunter\MyHunter_Modules\MyHunter_Stings.lua
+# Plugins\MyHunter\MyHunter_Localization\MyHunter_Locale_enUS.lua
+# Plugins\MyHunter\MyHunter_Localization\MyHunter_Locale_frFR.lua
 
 # ===================================================
-# PLUGINS - MYHUNTER SPEC
+# PLUGINS - MYHUNTER MODULES FONCTIONNELS
 # ===================================================
-Plugins\MyHunter\MyHunter_Spec\MyHunter_SpecBase.lua
-Plugins\MyHunter\MyHunter_Spec\MyHunter_BeastMastery.lua
-Plugins\MyHunter\MyHunter_Spec\MyHunter_Marksman.lua
-Plugins\MyHunter\MyHunter_Spec\MyHunter_Survival.lua
+# Plugins\MyHunter\MyHunter_Modules\MyHunter_Aspects.lua
+# Plugins\MyHunter\MyHunter_Modules\MyHunter_Pet.lua
+# Plugins\MyHunter\MyHunter_Modules\MyHunter_Stings.lua
+# Plugins\MyHunter\MyHunter_Modules\MyHunter_Rotation.lua
 
+# ===================================================
+# PLUGINS - MYHUNTER SPECIALIZATIONS
+# ===================================================
+# Plugins\MyHunter\MyHunter_Spec\MyHunter_SpecBase.lua
+# Plugins\MyHunter\MyHunter_Spec\MyHunter_BeastMastery.lua
+# Plugins\MyHunter\MyHunter_Spec\MyHunter_Marksman.lua
+# Plugins\MyHunter\MyHunter_Spec\MyHunter_Survival.lua
+
+# ===================================================
+# PLUGINS - MYHUNTER UI (chargé en dernier)
+# ===================================================
+# Plugins\MyHunter\MyHunter_UI.lua
+# Plugins\MyHunter\MyHunter_Modules\MyHunter_RotationDisplay.lua
